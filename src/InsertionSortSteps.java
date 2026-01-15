@@ -16,7 +16,8 @@ public class InsertionSortSteps {
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             for (int i = 0; i < n; i++) {
-                System.out.print(arr[i] + " ");
+                if (i > 0) System.out.print(" ");
+                System.out.print(arr[i]);
             }
             System.out.println();
             j--;
@@ -24,10 +25,9 @@ public class InsertionSortSteps {
 
         arr[j + 1] = key;
         for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+            if (i > 0) System.out.print(" ");
+            System.out.print(arr[i]);
         }
         System.out.println();
     }
-
-    
 }
